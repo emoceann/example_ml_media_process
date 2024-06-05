@@ -1,4 +1,5 @@
-example fastapi+ml_model with ddd, tdd
+example fastapi+ml_model with ddd, tdd.
+
 taskiq for delayed tasks
 
 
