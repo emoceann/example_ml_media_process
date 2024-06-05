@@ -28,7 +28,7 @@ class TestAnalyzeTasks:
         mapped_result = result.mappings().first()
         assert ProcessResultWithId(**mapped_result)
 
-    async def test_video_analyze_task(self, get_db_session) -> None:
+    async def test_image_analyze_task(self, get_db_session) -> None:
         path_to_test_media = "tests/media_analyzer/test_media/test_pic.webp"
         task = await process_image.kiq(
             image_path=await self.copy_file(path_to_test_media)
